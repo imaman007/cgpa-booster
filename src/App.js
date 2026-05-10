@@ -99,7 +99,7 @@ function App() {
 
       {/* NAVBAR */}
       <nav className="navbar">
-        <div className="navbar-logo">📚 CGPA Booster</div>
+        <div className="navbar-logo">📚 CGPA Booster ✨</div>
         <div className="navbar-tagline">AI-powered study planner for CSE students</div>
       </nav>
 
