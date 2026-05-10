@@ -1,0 +1,314 @@
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: white;
+  min-height: 100vh;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.navbar-logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.navbar-tagline {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  text-align: center;
+  padding: 80px 20px 60px 20px;
+}
+
+.hero-badge {
+  display: inline-block;
+  background-color: #1e293b;
+  color: #38bdf8;
+  font-size: 13px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+  border: 1px solid #334155;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #38bdf8;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #94a3b8;
+  max-width: 540px;
+  margin: 0 auto 48px auto;
+  line-height: 1.7;
+}
+
+/* ===== UPLOAD BOX ===== */
+.upload-section {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.upload-box {
+  border: 2px dashed #334155;
+  border-radius: 20px;
+  padding: 60px 40px;
+  width: 100%;
+  max-width: 560px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #1e293b;
+  text-align: center;
+}
+
+.upload-box:hover {
+  border-color: #38bdf8;
+  background-color: #1a2e45;
+  transform: translateY(-2px);
+}
+
+.upload-box.dragging {
+  border-color: #38bdf8;
+  background-color: #1a2e45;
+}
+
+.upload-icon {
+  font-size: 56px;
+  margin-bottom: 16px;
+}
+
+.upload-box h3 {
+  font-size: 20px;
+  color: #e2e8f0;
+  margin-bottom: 8px;
+}
+
+.upload-box p {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.upload-box .upload-hint {
+  font-size: 12px;
+  color: #475569;
+  margin-top: 12px;
+}
+
+/* ===== HIDDEN FILE INPUT ===== */
+.hidden-input {
+  display: none;
+}
+
+/* ===== FILE SELECTED STATE ===== */
+.file-selected-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0f2d1f;
+  border: 1px solid #166534;
+  border-radius: 12px;
+  padding: 16px 20px;
+  width: 100%;
+  max-width: 560px;
+  margin: 20px auto 0 auto;
+}
+
+.file-selected-box .file-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.file-selected-box .file-icon {
+  font-size: 28px;
+}
+
+.file-selected-box .file-name {
+  font-size: 14px;
+  color: #4ade80;
+  font-weight: 600;
+}
+
+.file-selected-box .file-size {
+  font-size: 12px;
+  color: #166534;
+  margin-top: 2px;
+}
+
+.remove-file {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.remove-file:hover {
+  color: #f87171;
+  background-color: #1e293b;
+}
+
+/* ===== ANALYZE BUTTON ===== */
+.btn-analyze {
+  display: block;
+  margin: 28px auto 0 auto;
+  padding: 16px 48px;
+  background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+  color: #0f172a;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+.btn-analyze:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.35);
+}
+
+.btn-analyze:active {
+  transform: translateY(0px);
+}
+
+/* ===== HOW IT WORKS SECTION ===== */
+.how-it-works {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.how-it-works .subtitle {
+  color: #64748b;
+  font-size: 16px;
+  margin-bottom: 48px;
+}
+
+.steps-row {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.step-card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 32px 24px;
+  width: 200px;
+  transition: all 0.3s;
+}
+
+.step-card:hover {
+  border-color: #38bdf8;
+  transform: translateY(-4px);
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background-color: #0f172a;
+  border: 2px solid #38bdf8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #38bdf8;
+  margin: 0 auto 16px auto;
+}
+
+.step-emoji {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.step-card h4 {
+  font-size: 15px;
+  color: #e2e8f0;
+  margin-bottom: 8px;
+}
+
+.step-card p {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 32px;
+  border-top: 1px solid #1e293b;
+  color: #475569;
+  font-size: 13px;
+}
+
+/* ===== RESPONSIVE - MOBILE ===== */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .upload-box {
+    padding: 40px 24px;
+  }
+
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .steps-row {
+    gap: 16px;
+  }
+
+  .step-card {
+    width: 160px;
+    padding: 24px 16px;
+  }
+}
